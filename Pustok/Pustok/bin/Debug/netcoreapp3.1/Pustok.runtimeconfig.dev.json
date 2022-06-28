@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Lamia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Lamia\\.nuget\\packages"
+    ]
+  }
+}

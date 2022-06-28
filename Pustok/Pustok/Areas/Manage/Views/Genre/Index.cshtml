@@ -1,0 +1,41 @@
+﻿@model List<Genre>
+@{
+    ViewData["Title"] = "Index";
+    var count = 0;
+}
+
+<h1>Index</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <a class="btn btn-primary">Create</a>
+        </div>
+        <div class="col-md-10 mx-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                                </tr>
+                </thead>
+                <tbody>
+                    @foreach (var genre in Model)
+                    {
+                        count++;
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td>@genre.Name</td>
+                            <td>
+                                <a asp-action="edit" class="btn btn-warning">Edit</a>
+                                <a asp-action="delete" class="btn btn-danger">Delete</a>
+                                a
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
